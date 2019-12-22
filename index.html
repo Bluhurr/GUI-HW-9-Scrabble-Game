@@ -1,0 +1,58 @@
+<!--
+Name: Greg Lawrence
+Email: gregory_lawrence@student.uml.edu
+Umass Lowell Computer Science
+Copyright(c) December 21, 2019. May be freely copied or excerpted for educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mini Scrabble Game</title>
+        <!-- Linking Stylesheet -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <!--  using Google JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+      <div class = "wrapper">
+        <section class="Description">
+          <div class="instr">
+            <h1>GUI Scrabble Game</h1>
+            <p><strong>Directons:</strong> You start out with 7 tiles and must drag and drop letters from the tiles holder onto the line from the board then click calculate to get your score. After clicking calculate the program will clear the board If you want to use a different board click "New Line from Board" button. If you want a different set of letters click the "New set of letters" button.</p>
+            <input id="newLetters" type="button" value="New set of letters">
+            <input id="newBoard" type="button" value="New line from Board">
+            <h2>Score: </h2>
+            <h1 id="score"></h1>
+          </div>
+        </section>
+        <div id="tileContainer">
+          <div id="cardPile"> </div>
+      </div>
+      <br>
+      <!-- Portion of code for tiles drop sections -->
+      <div id="cardContainer">
+          <div id="cardSlots">
+              <div id="slot-1" class="dropLoc" ></div>
+              <div id="slot-2" class="dropLoc" ></div>
+              <div id="slot-3" class="dropLoc" ></div>
+              <div id="slot-4" class="dropLoc" ></div>
+              <div id="slot-5" class="dropLoc" ></div>
+              <div id="slot-6" class="dropLoc" ></div>
+              <div id="slot-7" class="dropLoc" ></div>
+              <div id="slot-8" class="dropLoc" ></div>
+              <div id="slot-9" class="dropLoc" ></div>
+              <div id="slot-10" class="dropLoc" ></div>
+              <div id="slot-11" class="dropLoc" ></div>
+              <div id="slot-12" class="dropLoc" ></div>
+              <div id="slot-13" class="dropLoc" ></div>
+              <div id="slot-14" class="dropLoc" ></div>
+              <div id="slot-15" class="dropLoc" ></div>
+          </div>
+      </div>
+      <input id="submit" type="button" value="Calculate">
+      </div>
+      <script src="scrabble.js"></script> <!-- linking jquery file -->
+    </body>
+</html>

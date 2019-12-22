@@ -1,0 +1,128 @@
+/*
+    Name: Greg Lawrence
+    Email: gregory_lawrence@student.uml.edu
+    Umass Lowell Computer Science
+    Copyright(c) December 21, 2019. May be freely copied or excerpted for educational purposes with credit to the author.
+    Description:
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body {
+    background:  #ccc;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%; /*making sure images stay inside parents*/
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 15px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h4 {
+    background-color: cyan;
+}
+
+.notYet, a.notYet {
+    display: none;
+}
+
+.instr {
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 2048px;
+    min-width: 1024px;
+    max-height: 512px;
+    min-height: 256px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(103, 104, 104, 0.8); /* box shadow that is over 1px to the right and blurred 5px with a grey color and 0.8 opacity */
+}
+
+input[type=button] {
+    width: 12%;
+    max-width: 256px;
+    min-width: 125px;
+    text-align: center;
+    background-color: #00b1da;
+    color: white;
+    padding: 14px 0px;
+    margin: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit{
+    margin: auto;
+}
+
+#tileContainer {
+    text-align:center;
+    width: 660px;
+    height: 135px;
+    margin: auto;
+    background: url(../images/holder.png);
+    background-size: 100% 100%;
+}
+
+#cardContainer {
+    width:1407px;
+    height: 80pt;
+    background-size:  100% 100%;
+}
+
+#cardPile {
+    margin: auto;
+    width: 700px;
+}
+
+#cardSlots {
+    margin: auto;
+    width: 2048px;
+}
+
+#cardSlots .dropLoc {
+    float: left;
+    margin-left: 4px;
+    padding-top: 11px;
+    padding-left:2px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    width:84px;
+    height:84px;
+}
+
+#cardPile .dragobj {
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    margin-left: 2.21px;
+    margin-right: 1.0px;
+    padding-top: 11px;
+    padding-right: .5px;
+    padding-bottom: 1px;
+    width:87px;
+    height:87px;
+}
+
+#cardSlots div.hovered {
+  background: grey;
+}
+
+#cardSlots div {
+  opacity: 0;
+  border-style:dashed;
+  border-radius: 360px;
+}
